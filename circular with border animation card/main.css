@@ -118,3 +118,7 @@
 .content a:hover {
   letter-spacing: 0.2rem;
 }
+
+.container {
+  background: #162052;
+}
