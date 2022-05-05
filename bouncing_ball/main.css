@@ -1,5 +1,7 @@
 :root {
   --boxColor: #0ff7;
+  --rotateSpeed: 30s;
+  --bounceSpeed: 1.5s;
 }
 
 body {
@@ -9,13 +11,22 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 75px;
-  perspective: 10em;
+  perspective: 5em;
   perspective-origin: 50% calc(50% - 2em);
 }
 
 .scene {
   position: relative;
   transform-style: preserve-3d;
+  animation: sceneRotate var(--rotateSpeed) infinite linear;
+}
+@keyframes sceneRotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .ball {
@@ -27,6 +38,16 @@ body {
   bottom: 1em;
   left: -0.5em;
   background-image: radial-gradient(circle at top, lightblue, #000);
+  animation: ballBounce var(--bounceSpeed) infinite ease-out, sceneRotate var(--rotateSpeed) infinite linear reverse;
+}
+@keyframes ballBounce {
+  0%, 100% {
+    bottom: 0.5em;
+  }
+  50% {
+    bottom: 3em;
+    animation-timing-function: ease-in;
+  }
 }
 
 .cube {
@@ -34,10 +55,22 @@ body {
   height: 2em;
   position: absolute;
   left: -1em;
-  top: -1em;
+  bottom: -1em;
   transform-style: preserve-3d;
+  animation: cubeHeight var(--bounceSpeed) infinite linear;
 }
-.cube .left, .cube .right, .cube .front, .cube .back {
+@keyframes cubeHeight {
+  0%, 100% {
+    height: 1.5em;
+  }
+  8%, 93.5% {
+    height: 2em;
+  }
+}
+.cube .left,
+.cube .right,
+.cube .front,
+.cube .back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -63,6 +96,24 @@ body {
   background: var(--boxColor);
   transform: rotateX(90deg) translateZ(1em);
   box-shadow: 0 0 0.5em #000 inset;
+}
+.cube .top .ballShadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4666666667), rgba(0, 0, 0, 0) 50%);
+  animation: shadowAnimate var(--bounceSpeed) infinite ease-out;
+}
+@keyframes shadowAnimate {
+  0%, 8%, 93.5%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.5;
+    animation-timing-function: ease-in;
+  }
 }
 .cube .bottom {
   position: absolute;
