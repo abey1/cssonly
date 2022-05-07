@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --circle-one-color: rgb(180, 21, 47);
+  --circle-two-color: rgb(21, 180, 87);
+  --circle-three-color: rgb(45, 21, 180);
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  height: 100vh;
+}
+body .scene {
+  position: relative;
+}
+body .scene .circle {
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+}
+body .scene .circle1 {
+  width: 2em;
+  height: 2em;
+  border-left: 0.1em var(--circle-one-color) solid;
+  border-radius: 50%;
+  left: -0.5em;
+  animation: rot 4s infinite linear;
+}
+body .scene .circle1::before {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+  background: var(--circle-one-color);
+  position: absolute;
+  left: 0.8em;
+  top: -0.15em;
+  border-radius: 50%;
+  box-shadow: 0 0 5em var(--circle-one-color), 0 0 10em var(--circle-one-color), 0 0 15px var(--circle-one-color), 0 0 20px var(--circle-one-color), 0 0 25px var(--circle-one-color), 0 0 30px var(--circle-one-color), 0 0 35px var(--circle-one-color);
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .scene .circle2 {
+  width: 2em;
+  height: 2em;
+  border-left: 0.1em var(--circle-two-color) solid;
+  border-radius: 50%;
+  left: 0.5em;
+  animation: rot 4s 1s infinite linear;
+}
+body .scene .circle2::before {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+  background: var(--circle-two-color);
+  position: absolute;
+  left: 0.8em;
+  top: -0.15em;
+  border-radius: 50%;
+  box-shadow: 0 0 5em var(--circle-two-color), 0 0 10em var(--circle-two-color), 0 0 15px var(--circle-two-color), 0 0 20px var(--circle-two-color), 0 0 25px var(--circle-two-color), 0 0 30px var(--circle-two-color), 0 0 35px var(--circle-two-color);
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .scene .circle3 {
+  width: 2em;
+  height: 2em;
+  border-left: 0.1em var(--circle-three-color) solid;
+  border-radius: 50%;
+  top: 0.5em;
+  animation: rot 4s 2s infinite linear;
+}
+body .scene .circle3::before {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+  background: var(--circle-three-color);
+  position: absolute;
+  left: 0.8em;
+  top: -0.15em;
+  border-radius: 50%;
+  box-shadow: 0 0 5em var(--circle-three-color), 0 0 10em var(--circle-three-color), 0 0 15px var(--circle-three-color), 0 0 20px var(--circle-three-color), 0 0 25px var(--circle-three-color), 0 0 30px var(--circle-three-color), 0 0 35px var(--circle-three-color);
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
