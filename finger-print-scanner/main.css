@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .scan {
+  position: relative;
+  text-align: center;
+  height: 450px;
+  width: 450px;
+  border: 1px solid red;
+}
+body .scan .fingerprint {
+  margin-top: 40px;
+}
+body .scan .fingerprint i {
+  font-size: 20em;
+  background: -webkit-linear-gradient(#3deeee 0%, black 0%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: iscananim 5s infinite ease-in-out;
+}
+@keyframes iscananim {
+  0% {
+    background: -webkit-linear-gradient(#3deeee 0%, black 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  2.5% {
+    background: -webkit-linear-gradient(#3deeee 5%, black 5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  5% {
+    background: -webkit-linear-gradient(#3deeee 10%, black 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  7.5% {
+    background: -webkit-linear-gradient(#3deeee 15%, black 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  10% {
+    background: -webkit-linear-gradient(#3deeee 20%, black 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  12.5% {
+    background: -webkit-linear-gradient(#3deeee 25%, black 25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  15% {
+    background: -webkit-linear-gradient(#3deeee 30%, black 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  17.5% {
+    background: -webkit-linear-gradient(#3deeee 35%, black 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    background: -webkit-linear-gradient(#3deeee 40%, black 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  22.5% {
+    background: -webkit-linear-gradient(#3deeee 45%, black 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    background: -webkit-linear-gradient(#3deeee 50%, black 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  27.5% {
+    background: -webkit-linear-gradient(#3deeee 55%, black 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    background: -webkit-linear-gradient(#3deeee 60%, black 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  32.5% {
+    background: -webkit-linear-gradient(#3deeee 65%, black 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  35% {
+    background: -webkit-linear-gradient(#3deeee 70%, black 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  37.5% {
+    background: -webkit-linear-gradient(#3deeee 75%, black 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background: -webkit-linear-gradient(#3deeee 80%, black 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  42.5% {
+    background: -webkit-linear-gradient(#3deeee 85%, black 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  45% {
+    background: -webkit-linear-gradient(#3deeee 90%, black 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  47.5% {
+    background: -webkit-linear-gradient(#3deeee 95%, black 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-linear-gradient(#3deeee 100%, black 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  52.5% {
+    background: -webkit-linear-gradient(#3deeee 95%, black 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  55% {
+    background: -webkit-linear-gradient(#3deeee 90%, black 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  57.5% {
+    background: -webkit-linear-gradient(#3deeee 85%, black 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background: -webkit-linear-gradient(#3deeee 80%, black 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  62.5% {
+    background: -webkit-linear-gradient(#3deeee 75%, black 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  65% {
+    background: -webkit-linear-gradient(#3deeee 70%, black 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  67.5% {
+    background: -webkit-linear-gradient(#3deeee 65%, black 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    background: -webkit-linear-gradient(#3deeee 60%, black 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  72.5% {
+    background: -webkit-linear-gradient(#3deeee 55%, black 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    background: -webkit-linear-gradient(#3deeee 50%, black 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  77.5% {
+    background: -webkit-linear-gradient(#3deeee 45%, black 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background: -webkit-linear-gradient(#3deeee 40%, black 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  82.5% {
+    background: -webkit-linear-gradient(#3deeee 35%, black 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  85% {
+    background: -webkit-linear-gradient(#3deeee 30%, black 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  87.5% {
+    background: -webkit-linear-gradient(#3deeee 25%, black 25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  90% {
+    background: -webkit-linear-gradient(#3deeee 20%, black 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  92.5% {
+    background: -webkit-linear-gradient(#3deeee 15%, black 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  95% {
+    background: -webkit-linear-gradient(#3deeee 10%, black 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  97.5% {
+    background: -webkit-linear-gradient(#3deeee 5%, black 5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-linear-gradient(#3deeee 0%, black 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+body .scan h3 {
+  margin-top: 40px;
+}
+body .scan .scanner {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #3deeee;
+  top: 40px;
+  animation: goupdown 5s infinite ease-in-out;
+}
+@keyframes goupdown {
+  0% {
+    top: 40px;
+  }
+  50% {
+    top: 350px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
